@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="./css/tailwind.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="title text-white text-3xl font-bold text-center ">Rock Paper Scissor</h1>
+    </div>
+    <div class="game">
+        <div class="font-bold text-center text-2xl mt-16">
+            <button id="startGame"
+                class="button bg-green-500 text-white hover:bg-green-700 focus:outline-none rounded-full p-2 px-3 shadow">Start
+                Game</button>
+        </div>
+        <div id="gamePlay" class="font-bold text-center text-2xl mt-16 hidden">
+            <h2 id="choice" class="text-4xl">Your Choice</h2>
+            <h2 id="compChoosesParent" class="text-2xl text-gray-100 hidden">Computer Chooses <span
+                    class="p-1 rounded-full bg-black shadow" id="compChooses"></span>
+            </h2>
+            <div id="scores">
+                Player: <span id="playerSC">0</span>
+                Computer: <span id="computerSC">0</span>
+            </div>
+        </div>
+        <div id="buttongroup" class="text-5xl mr-auto text-center mt-5 hidden">
+            <button id="rock"
+                class="playbutton bg-white p-2 w-20 rounded-full hover:bg-red-700 focus:outline-none">👊</button>
+            <button id="paper"
+                class="playbutton bg-white p-2 w-20 rounded-full hover:bg-yellow-600 focus:outline-none">🖐</button>
+            <button id="scissor"
+                class="playbutton bg-white p-2 w-20 rounded-full hover:bg-blue-600 focus:outline-none">✌</button>
+        </div>
+    </div>
+    <!-- Hello, this is my first instant game -->
+    <script src="script/main.js"></script>
+</body>
+
+</html>
+<!--     -->
